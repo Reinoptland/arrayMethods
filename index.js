@@ -1,10 +1,6 @@
-const americanGrades = ["A", "F", "C", "D"];
+// americanGrade: "A", "F", "BLA"
+// return value: 9, 5, null
 
-// input: "A", "F"
-// output: 9, 5
-
-const input = "B";
-let output;
 function toEuropeanGrade(americanGrade) {
   switch (americanGrade) {
     case "A+":
@@ -27,5 +23,17 @@ function toEuropeanGrade(americanGrade) {
 }
 
 const europeanGrade = toEuropeanGrade("B");
+const europeanGrade1 = toEuropeanGrade("A+");
 
-console.log("YOU GOT AN:", europeanGrade, "in european");
+// console.log("YOU GOT THE FOLLOWING GRADE:", europeanGrade1, "in european");
+
+// input: ["A", "F", "C", "D"]
+// output: [9, 5, 7, 6]
+
+const americanGrades = ["A", "F", "C", "D"];
+
+for (let index = 0; index < americanGrades.length; index++) {
+  // index: 0, 1, 2, 3,
+  const americanGrade = americanGrades[index];
+  console.log("1 AMERICAN GRADE AT A TIME:", americanGrade);
+}
