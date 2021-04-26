@@ -8,7 +8,7 @@ const guesses = ["b", "a", "e", "i", "q"];
 
 // steps
 // X code schrijven om te checken of 1 letter in het woord zit
-// - naar een functie vertalen
+// x naar een functie vertalen
 // - loopen en de functie uitvoeren voor alle elementen
 
 const letter = "b";
@@ -23,3 +23,14 @@ function containsLetter(letter, word) {
 
 const containsA = containsLetter("a", "javascript");
 console.log(containsA);
+
+for (let index = 0; index < guesses.length; index++) {
+  const guess = guesses[index];
+  const isGuessInWord = containsLetter(guess, word);
+  console.log(
+    "1 GUESS AT A TIME:",
+    guess,
+    "IS THIS GUESS CORRECT:",
+    isGuessInWord
+  );
+}
