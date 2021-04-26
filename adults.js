@@ -4,6 +4,6 @@ const users = [
   { name: "Miriam", age: 28 },
 ];
 
-const adults = users.filter(() => {
-  console.log("HOW OFTEN DO I GET CALLED?");
+const adults = users.filter((user) => {
+  console.log("HOW OFTEN DO I GET CALLED?", user);
 });
