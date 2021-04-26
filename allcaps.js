@@ -5,6 +5,15 @@ const greetings = ["hello", "hi", "how are you"];
 // transformatie: toUpperCase()
 
 const allCaps = greetings.map((greeting) => {
-  console.log("1 greeting", greeting);
+  console.log("1 greeting", greeting.toUpperCase());
   console.log("HOW OFTEN DO I GET CALLED?");
+
+  return;
 });
+
+console.log("WHAT DOES THE OUTPUT ARRAY CONTAIN?", allCaps);
+
+// predictions:
+// ["HELLO", "HI", "HOW ARE YOU"]
+// ["hello", "hi", "how are you"]
+//
