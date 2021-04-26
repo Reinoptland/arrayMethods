@@ -8,7 +8,14 @@ const users = [
 
 const miriam = users.find((user) => {
   console.log("HOW OFTEN DO I GET CALLED?", user, user.name === "Miriam");
+  if (user.name === "Miriam") {
+    return true;
+  } else {
+    return false;
+  }
 });
+
+console.log("OUTPUT:", miriam);
 
 // desired output:
 // { name: "Miriam", age: 28 }
