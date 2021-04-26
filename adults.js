@@ -5,5 +5,5 @@ const users = [
 ];
 
 const adults = users.filter((user) => {
-  console.log("HOW OFTEN DO I GET CALLED?", user);
+  console.log("HOW OFTEN DO I GET CALLED?", user, user.age >= 18);
 });
