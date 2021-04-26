@@ -14,7 +14,7 @@ const guesses = ["b", "a", "e", "i", "q"];
 const letter = "b";
 // console.log("DOES JAVASCRIPT CONTAIN B:", containsB);
 
-function containsLetter(letter, word) {
+function containsLetter(letter) {
   console.log("INPUTS:", letter, word);
   const isLetterInWord = word.includes(letter);
   console.log(isLetterInWord);
@@ -41,3 +41,7 @@ for (let index = 0; index < guesses.length; index++) {
 }
 
 console.log(wrongGuesses);
+
+const correctGuessesEZMODE = guesses.filter(containsLetter);
+
+console.log("OUTPUT FILTER:", correctGuessesEZMODE);
