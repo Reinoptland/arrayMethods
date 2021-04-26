@@ -13,4 +13,10 @@ const guesses = ["b", "a", "e", "i", "q"];
 
 const letter = "b";
 const containsB = word.includes(letter);
-console.log("DOES JAVASCRIPT CONTAIN B:", containsB);
+// console.log("DOES JAVASCRIPT CONTAIN B:", containsB);
+
+function containsLetter(letter, word) {
+  console.log("INPUTS:", letter, word);
+}
+
+containsLetter("a", "javascript");
