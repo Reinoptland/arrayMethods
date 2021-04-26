@@ -8,7 +8,7 @@ const allCaps = greetings.map((greeting) => {
   console.log("1 greeting", greeting.toUpperCase());
   console.log("HOW OFTEN DO I GET CALLED?");
 
-  return;
+  return greeting.toUpperCase();
 });
 
 console.log("WHAT DOES THE OUTPUT ARRAY CONTAIN?", allCaps);
