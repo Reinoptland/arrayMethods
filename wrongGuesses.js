@@ -24,6 +24,8 @@ function containsLetter(letter, word) {
 const containsA = containsLetter("a", "javascript");
 console.log(containsA);
 
+let wrongGuesses = [];
+
 for (let index = 0; index < guesses.length; index++) {
   const guess = guesses[index];
   const isGuessInWord = containsLetter(guess, word);
@@ -33,4 +35,9 @@ for (let index = 0; index < guesses.length; index++) {
     "IS THIS GUESS CORRECT:",
     isGuessInWord
   );
+  if (isGuessInWord === false) {
+    wrongGuesses.push(guess);
+  }
 }
+
+console.log(wrongGuesses);
