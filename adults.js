@@ -8,11 +8,12 @@ const adults = users.filter((user) => {
   console.log("HOW OFTEN DO I GET CALLED?", user, user.age >= 18);
   // when true is returned -> we keep it
   // when is false is returned -> we filter it out
-  if (user.age >= 18) {
-    return true;
-  } else {
-    return false;
-  }
+  //   if (user.age >= 18) {
+  //     return user;
+  //   } else {
+  //     return;
+  //   }
+  return user.age >= 18; // true or false
 });
 
 console.log("OUTPUT:", adults);
