@@ -31,6 +31,7 @@ const europeanGrade1 = toEuropeanGrade("A+");
 // output: [9, 5, 7, 6]
 
 const americanGrades = ["A", "F", "C", "D"];
+let europeanGrades = [];
 
 for (let index = 0; index < americanGrades.length; index++) {
   // index: 0, 1, 2, 3,
@@ -38,7 +39,11 @@ for (let index = 0; index < americanGrades.length; index++) {
   console.log("1 AMERICAN GRADE AT A TIME:", americanGrade);
   const europeanGrade = toEuropeanGrade(americanGrade);
   console.log("YOU GOT THE FOLLOWING GRADE:", europeanGrade, "in european");
+  europeanGrades.push(europeanGrade);
+  console.log("GRADES SO FAR:", europeanGrades);
 }
+
+console.log("RESULT:", europeanGrades);
 
 // voorspellingen:
 // - 8 logs (we loopen, 2 logjes per loop)
