@@ -12,11 +12,14 @@ const guesses = ["b", "a", "e", "i", "q"];
 // - loopen en de functie uitvoeren voor alle elementen
 
 const letter = "b";
-const containsB = word.includes(letter);
 // console.log("DOES JAVASCRIPT CONTAIN B:", containsB);
 
 function containsLetter(letter, word) {
   console.log("INPUTS:", letter, word);
+  const isLetterInWord = word.includes(letter);
+  console.log(isLetterInWord);
+  return isLetterInWord;
 }
 
-containsLetter("a", "javascript");
+const containsA = containsLetter("a", "javascript");
+console.log(containsA);
