@@ -3,32 +3,29 @@ const americanGrades = ["A", "F", "C", "D"];
 // input: "A", "F"
 // output: 9, 5
 
-const input = "C";
+const input = "B";
 let output;
+function toEuropeanGrade(americanGrade) {
+  switch (americanGrade) {
+    case "A+":
+      return 10;
+    case "A":
+      return 9;
+    case "B":
+      return 8;
+    case "C":
+      return 7;
+    case "D":
+      return 6;
+    case "F":
+      return 5;
 
-switch (input) {
-  case "A+":
-    output = 10;
-    break;
-  case "A":
-    output = 9;
-    break;
-  case "B":
-    output = 8;
-    break;
-  case "C":
-    output = 7;
-    break;
-  case "D":
-    output = 6;
-    break;
-  case "F":
-    output = 5;
-    break;
-
-  default:
-    console.log("This is not an american grade, sorry");
-    break;
+    default:
+      console.log("This is not an american grade, sorry");
+      return null;
+  }
 }
 
-console.log("YOU GOT AN:", output, "in european");
+const europeanGrade = toEuropeanGrade("B");
+
+console.log("YOU GOT AN:", europeanGrade, "in european");
