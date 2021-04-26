@@ -8,11 +8,7 @@ const users = [
 
 const miriam = users.find((user) => {
   console.log("HOW OFTEN DO I GET CALLED?", user, user.name === "Miriam");
-  if (user.name === "Miriam") {
-    return true;
-  } else {
-    return false;
-  }
+  return user.name === "Miriam";
 });
 
 console.log("OUTPUT:", miriam);
