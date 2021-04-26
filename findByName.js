@@ -6,10 +6,7 @@ const users = [
 ];
 // const userNameToFind = "Miriam";
 
-const miriam = users.find((user) => {
-  console.log("HOW OFTEN DO I GET CALLED?", user, user.name === "Miriam");
-  return user.name === "Miriam";
-});
+const miriam = users.find((user) => user.name === "Miriam");
 
 console.log("OUTPUT:", miriam);
 
