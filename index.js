@@ -46,8 +46,5 @@ for (let index = 0; index < americanGrades.length; index++) {
 console.log("RESULT:", europeanGrades);
 
 const europeanGradesEZMODE = americanGrades.map(toEuropeanGrade);
-console.log("LAZY PROGRAMMER MODE:", europeanGradesEZMODE);
 
-// voorspellingen:
-// - 8 logs (we loopen, 2 logjes per loop)
-// - 1 log
+console.log("LAZY PROGRAMMER MODE:", europeanGradesEZMODE);
