@@ -4,10 +4,10 @@ const users = [
   { name: "Miriam", age: 28 },
   { name: "Elias", age: 2 },
 ];
-const userNameToFind = "Miriam";
+// const userNameToFind = "Miriam";
 
 const miriam = users.find((user) => {
-  console.log("HOW OFTEN DO I GET CALLED?", user);
+  console.log("HOW OFTEN DO I GET CALLED?", user, user.name === "Miriam");
 });
 
 // desired output:
