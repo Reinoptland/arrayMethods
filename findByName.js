@@ -6,8 +6,8 @@ const users = [
 ];
 const userNameToFind = "Miriam";
 
-const miriam = users.find(() => {
-  console.log("HOW OFTEN DO I GET CALLED?");
+const miriam = users.find((user) => {
+  console.log("HOW OFTEN DO I GET CALLED?", user);
 });
 
 // desired output:
