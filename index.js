@@ -36,4 +36,10 @@ for (let index = 0; index < americanGrades.length; index++) {
   // index: 0, 1, 2, 3,
   const americanGrade = americanGrades[index];
   console.log("1 AMERICAN GRADE AT A TIME:", americanGrade);
+  const europeanGrade = toEuropeanGrade(americanGrade);
+  console.log("YOU GOT THE FOLLOWING GRADE:", europeanGrade, "in european");
 }
+
+// voorspellingen:
+// - 8 logs (we loopen, 2 logjes per loop)
+// - 1 log
